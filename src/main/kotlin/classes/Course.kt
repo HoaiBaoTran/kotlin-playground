@@ -1,5 +1,7 @@
 package classes
 
+import com.kotlinplayground.CourseJava
+
 data class Course(
     val id: Int,
     val name: String,
@@ -45,4 +47,16 @@ fun main() {
         CourseCategory.MARKETING
     )
     println(marketingCourse)
+
+    val courseJava = CourseJava(
+        1,
+        "Facebook Marketing",
+        "HoaiBao"
+    )
+
+    println("courseJava: $courseJava")
+    courseJava.id = 3
+    courseJava.name = "abc"
+    println("courseJava: $courseJava")
+
 }
